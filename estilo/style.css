@@ -47,6 +47,7 @@ header{
     background-color: var(--cor-destaque);
     color: #fff;
     padding: 1rem;
+    font-family: var(--fonte-pixelmix);
     text-align: center;
     box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.2);
 }
@@ -63,6 +64,8 @@ header > picture > img{
 
 header > picture > h1{
     font-size: 50px;
+    margin-left: 1rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 header > nav{
@@ -88,12 +91,14 @@ header > nav > ul > li > a{
     background-color: #ec8089a6;
     padding: 10px;
     border-radius: 3px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 header > nav > ul > li > a:hover{
     background-color: #fff;
     color: var(--cor-destaque);
     transition: 0.3s;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 /* CONTEUDO */
@@ -447,10 +452,20 @@ footer > p > a{
 
     main > #artigo03{
         flex-direction: column;
+        align-items: center;
     }
 
     main > #artigo03 > div{
-        max-width: none;
+        max-width: 90%;
+    }
+
+    main > #contato{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    main > #contato > #formulario{
+        max-width: 90%;
         width: 100%;
     }
 }
